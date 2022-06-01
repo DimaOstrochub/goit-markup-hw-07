@@ -1,0 +1,35 @@
+.site-contacts{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.site-contacts__item + .site-contacts__item{
+    margin-left: 50px;
+}
+
+.site-contacts__link{
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $brand-color;
+    
+&:hover, &:focus{
+    color: $link-color;
+    fill: $link-color;
+}
+}
+
+.site-contacts__svg{
+    margin-right: 10px;
+    fill: currentColor; 
+    padding: 0;
+}
